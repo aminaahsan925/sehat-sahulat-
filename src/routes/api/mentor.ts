@@ -41,7 +41,7 @@ export const Route = createFileRoute("/api/mentor")({
             Authorization: `Bearer ${apiKey}`,
           },
           body: JSON.stringify({
-            model: "llama-3.3-70b-versatile",
+            model: "llama-3.1-70b-versatile",
             temperature: 0.4,
             max_tokens: 700,
             messages: [{ role: "system", content: SYSTEM_PROMPT }, ...messages],
